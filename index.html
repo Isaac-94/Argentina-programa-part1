@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css"
+    integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+      <!-- Menú superior -->
+  <div class="container" id="invoice">
+    <div id="mymenu">
+      <nav class="menu">
+        <a href="#datos">Datos</a>
+        <a href="#estudios">Estudios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+        <a><i class="fa-solid fa-download" id="descargar"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </div>
+    <!-- div Columna Izquierda -->
+    <a name="inicio"></a>
+    <div class="col-cont">
+      <div class="columna info-personal">
+        <img class="foto" src="https://randomuser.me/api/portraits/men/42.jpg" alt="Imagen de rostro a modo de ID"
+          width="150" height="150" />
+        <h2 id="datos">Datos personales</h2>
+        <ul>
+          <li>Nombre:<span class="texto"> Sebastian</span></li>
+          <li>Apellido:<span class="texto"> Romero</span></li>
+          <li>Edad:<span class="texto"> 28</span></li>
+          <li>Nacionalidad:<span class="texto"> Uruguayo</span></li>
+          <li>Domicilio:<span class="texto"> Montevideo</span></li>
+        </ul>
+        <h2 class="info-contacto" id="contacto">Datos de contacto</h2>
+        <ul>
+          <li> <span class="icono"><i class="fa-solid fa-envelope"></i>
+            </span><span class="texto"> Sebar90@gmail.com</span></li>
+          <li><span class="icono"><i class="fa-solid fa-phone"></i>
+            </span><span class="texto"> +549 (11) 25935365</span></li>
+          <li><span class="icono"><i class="fa-brands fa-linkedin"></i>
+            </span><a href="https://www.linkedin.com/in/isaac-carranza-965686107/" class="texto"> www.linkedin.com</a>
+          </li>
+        </ul>
+        <h2 class="info-contacto" id="contacto">Referencias</h2>
+        <h3>Nombre de compañía</h3>
+        <ul>
+          <li> <span class="icono"><i class="fa-solid fa-envelope"></i>
+            </span><span class="texto"> Company@hotmail.com</span></li>
+          <li><span class="icono"><i class="fa-solid fa-phone"></i>
+            </span><span class="texto"> +547 (01) 09875476</span></li>
+        </ul>
+        <h3>Nombre de compañía</h3>
+        <ul>
+          <li> <span class="icono"><i class="fa-solid fa-envelope"></i>
+            </span><span class="texto"> Company2@example.com</span></li>
+          <li><span class="icono"><i class="fa-solid fa-phone"></i>
+            </span><span class="texto"> +540 (45) 24576479</span></li>
+        </ul>
+      </div>
+      <!-- div columna derecha -->
+      <div class="columna info-laboral">
+        <div class="titulo">
+          <h1>Curriculum Vitae</h1>
+        </div>
+        <div class="presentacion">
+          <h3>Presentación:</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            architecto illo debitis nostrum autem aperiam impedit pariatur amet
+            atque reiciendis? Saepe sapiente cumque veritatis perferendis
+            consectetur voluptatibus provident ratione distinctio.
+          </p>
+        </div>
+        <div class="estudios">
+          <div>
+            <h2 id="estudios">Formación académica</h2>
+          </div>
+          <div class="box">
+            <div class="ano-estudio">
+              <h4>2006-2012</h4>
+            </div>
+            <div>
+              <h3>
+                Educación Secundaria Obligatoria <br>IES Maestro Juan de Ávila, Ciudad
+                Real</br>
+              </h3>
+            </div>
+          </div>
+          <!-- Seccion estudios -->
+          <div class="box">
+            <div class="ano-estudio">
+              <h4>2013-2015</h4>
+            </div>
+            <div>
+              <h3>
+                Grado Superior en Administración y Finanzas<br> MEDAC, Málaga</br>
+              </h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="ano-estudio">
+              <h4>2016-2020</h4>
+            </div>
+            <div>
+              <h3>
+                Grado en Marketing y Publicidad<br> Universidad Complutense de Madrid</br>
+              </h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="ano-estudio">
+              <h4>2020-Actualidad</h4>
+            </div>
+            <div>
+              <h3>
+                Máster en Marketing Digital y Análisis de Datos<br> Universidad
+                Internacional de Valencia</br>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Seccion experiencia laboral -->
+        <h2 id="experiencia">Experiencia profesional</h2>
+        <div class="experiencia">
+          <div class="box">
+            <div class="ano-empresa">
+              <h4>2017-2020</h4>
+              <h4>Empresa</h4>
+            </div>
+            <div class="texto-Explab">
+              <h4>Diseñador Gráfico</h4>
+              <p>
+                -Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. At mollitia, incidunt quae sapiente possimus in
+                iusto voluptatem aspernatur reprehenderit fugiat est assumenda
+                perspiciatis, dolorem nulla quasi eveniet sequi? Deserunt, ipsum?
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="ano-empresa">
+              <h4>2020-2021</h4>
+              <h4>Empresa</h4>
+            </div>
+            <div class="texto-Explab">
+              <h4>Diseñador Gráfico</h4>
+              <p>
+                -Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. At mollitia, incidunt quae sapiente possimus in
+                iusto voluptatem aspernatur reprehenderit fugiat est assumenda
+                perspiciatis, dolorem nulla quasi eveniet sequi? Deserunt, ipsum?
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="ano-empresa">
+              <h4>2021-Actualidad</h4>
+              <h4>Empresa</h4>
+            </div>
+            <div class="texto-Explab">
+              <h4>Diseñador Web</h4>
+              <p>
+                -Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. At mollitia, incidunt quae sapiente
+                possimus in iusto voluptatem aspernatur reprehenderit fugiat est
+                assumenda perspiciatis, dolorem nulla quasi eveniet sequi?
+                Deserunt, ipsum?
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Seccion información complementaria -->
+        <div class="complement">
+          <div>
+            <h2>Formación complementaria</h2>
+          </div>
+          <div id="item">
+            <li>
+              Certificado de Inglés validado por <strong>Academia Británica</strong>
+            </li>
+          </div>
+          <div id="item">
+            <li>
+              Curso de Adobe Illustrator y Photoshop dictado en <strong>Universidad
+                Tecnologica Nacional</strong>
+            </li>
+          </div>
+          <div id="item">
+            <li>
+              Grado de Tecnicas avanzadas de Marketing y Publicidad Realizado en
+              <strong>Academia Udemy</strong>
+            </li>
+          </div>
+          <!-- Secciones ocultas -->
+          <section id="intereses">
+            <h2>Intereses</h2>
+            <h4> <span class="icono"><i class="fa-solid fa-gamepad"></i>
+              </span><span class="texto"> Video Juegos</span></h4>
+            <h4> <span class="icono"><i class="fa-solid fa-music"></i>
+              </span><span class="texto"> Composicion musical</span></h4>
+            <h4> <span class="icono"><i class="fa-solid fa-atom"></i>
+              </span><span class="texto"> Ciencia</span></h4>
+            <br>
+            <h4> <span class="icono"><i class="fa-sharp fa-solid fa-code"></i>
+              </span><span class="texto"> Programming</span></h4>
+            <h4> <span class="icono"><i class="fa-solid fa-book-open-reader"></i>
+              </span><span class="texto"> Lectura</span></h4>
+          </section>
+          <section id="certificados">
+            <h2>Certificados</h2>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="files/certif1.png">
+                  <img src="files/certif1.png" alt="Certificado 1" width="600" height="400">
+                </a>
+                <div class="desc">Ciclo Universitario</div>
+              </div>
+            </div>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="files/certif2.png">
+                  <img src="files/certif2.png" alt="Certificado 2" width="600" height="400">
+                </a>
+                <div class="desc">Curso de Diseño Gráfico Avanzado</div>
+              </div>
+            </div>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="files/certif3.png">
+                  <img src="files/certif3.png" alt="Certificado 3" width="600" height="400">
+                </a>
+                <div class="desc">English B2+ Level</div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Botones en pie de página -->
+        <footer>
+          <button id="btnIntereses" onclick="mostrarIntereses()"><i id="icon" class="fas fa-heart"></i><span
+              id="textoInt">Intereses</span></button>
+          <button id="btnCertificados" onclick="mostrarCertificados()"><i id="icon" class="fa-solid fa-file"></i><span
+              id="textobtn">Ver certificados</span></button>
+          <button class="imprimir" onclick="window.print()"><i id="icon" class="fa-solid fa-print"></i>Imprimir este
+            documento</button>
+        </footer>
+      </div>
+      <!--Boton flotante volver a inicio -->
+      <a href="#inicio" id="volver"><i id="arriba" class="fa-solid fa-caret-up"></i>Ir al inicio</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
